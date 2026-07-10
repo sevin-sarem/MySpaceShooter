@@ -1,49 +1,80 @@
 # 🌌 Milky Way Galaxy - Space Shooter Game
 
-A classic space shooter game built with **Python** and **Pygame**. This project was created to **solidify core Python programming skills** through hands-on game development.
+A classic space shooter game built with **Python** and **Pygame**. This project was created to **solidify Python programming skills** through hands-on game development.
 
 ## 🎮 About The Project
 
-I developed this game as a practical exercise to reinforce my understanding of:
+I built this game as a practical exercise to practice:
 
-- Object-Oriented Programming (OOP) with Python
-- Game loop architecture and frame rate management
-- Collision detection and physics
-- Event handling and user input management
+- Object-Oriented Programming (OOP)
+- Game loop and frame rate management
+- Collision detection
+- Event handling and keyboard input
 - Sprite rendering and animation
-- Audio integration (music & sound effects)
-- File I/O for high score persistence
-
-The game features a player spaceship that shoots bullets at descending enemy ships while avoiding collisions. It includes multiple enemy types, background music, sound effects, and a high score system.
+- Sound and music integration
+- File I/O for high score storage
 
 ## ✨ Features
 
-- 🚀 Smooth player movement with keyboard controls
-- 👾 4 different enemy types with random spawning
-- 💥 Explosion effects with sound
-- 🎵 Background music (Stranger Things theme)
-- 📊 High score tracking with persistent storage
-- 🎨 Dynamic scaling for different screen sizes
-- 🌟 Persian font support (Vazirmatn)
+- Smooth player movement with arrow keys
+- 4 different enemy types
+- Explosion effects with sound
+- Background music (Stranger Things theme)
+- High score tracking
+- Auto-scaling for different screen sizes
+- Persian font support
 
 ## 🎯 Controls
 
-| Key   | Action                 |
-|-------|------------------------|
-| ← / → | Move player left/right |
-| Space | Shoot bullet           |
-| Enter | Start game / Restart   |
-| ESC   | Exit game              |
+| Key | Action |
+|-----|--------|
+| ← / → | Move left/right |
+| Space | Shoot |
+| Enter | Start / Restart |
+| ESC | Exit |
 
-## 🛠️ Installation & Running
+## 🛠️ How to Run
 
-### Prerequisites
-- Python 3.8 or higher
-- pip (Python package manager)
+### Requirements
+- Python 3.8+
 
 ### Steps
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/YOUR_USERNAME/REPO_NAME.git
-cd REPO_NAME
+git clone https://github.com/SEVIN-SAREM/YOUR-REPO-NAME.git
+cd YOUR-REPO-NAME
+```
+
+2. Install dependencies:
+```bash
+pip install -r requirements.txt
+```
+
+3. Run the game:
+```bash
+python main.py
+```
+
+## 🎮 Gameplay
+
+- Destroy enemies to earn points
+- Each enemy = +1 point
+- Game over when enemy reaches the bottom
+- Enter your name to save high score
+
+## 📦 Build Executable (Windows)
+
+```bash
+pip install pyinstaller
+pyinstaller --onefile --windowed --icon=icon.ico --add-data "background-wallpaper1.jpg;." --add-data "bullet.png;." --add-data "enemy1.png;." --add-data "enemy2.png;." --add-data "enemy3.png;." --add-data "enemy4.png;." --add-data "explosion.wav;." --add-data "laser.wav;." --add-data "player.png;." --add-data "stranger-things.mp3;." --add-data "Vazirmatn-Black.ttf;." --add-data "icon.png;." main.py
+```
+
+## 📄 License
+
+MIT License
+
+## 🙏 Acknowledgments
+- Pygame community
+- Stranger Things theme music
+- Vazirmatn font
