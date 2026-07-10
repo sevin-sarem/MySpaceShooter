@@ -42,8 +42,8 @@ I built this game as a practical exercise to practice:
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/SEVIN-SAREM/YOUR-REPO-NAME.git
-cd YOUR-REPO-NAME
+git clone https://github.com/sevin-sarem/MySpaceShooter.git
+cd MySpaceShooter
 ```
 
 2. Install dependencies:
